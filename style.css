@@ -1,0 +1,328 @@
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  min-height: 100vh;
+}
+
+.left{
+  width: 50%;
+  color: gray;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.job-info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+label{
+  font-size: 20px;
+}
+
+.img-store{
+  width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.job-info input,
+.first-name input,
+.last-name input,
+.email-en input,
+.phone-en input,
+.linkedin-url input,
+.postal-code input,
+.city-state input,
+.country-name input,
+.driving input,
+.place-of-birth input,
+.dob input,
+.nationality input,
+.show-address input{
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #eff2f9;
+}
+
+.job-info input:focus,
+.first-name input:focus,
+.last-name input:focus,
+.email-en input:focus,
+.phone-en input:focus,
+.linkedin-url input:focus,
+.postal-code input:focus,
+.city-state input:focus,
+.country-name input:focus,
+.driving input:focus,
+.place-of-birth input:focus,
+.dob input:focus,
+.nationality input:focus,
+.show-address input:focus{
+  border-bottom: 2px solid #2a7de1;
+}
+
+.img{
+  width: 100px;
+  height: 100px;
+  background: #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.upload-photo{
+  color: #2a7de1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.name,
+.email-phone,
+.linkedin-code,
+.city-country,
+.driving-placeOfBirth,
+.dob-nationality{
+  display: flex;
+  gap: 20px;
+}
+.driving-placeOfBirth{
+  margin-top: 20px;
+}
+.first-name,
+.last-name,
+.email-en,
+.phone-en,
+.linkedin-url,
+.postal-code,
+.city-state,
+.country-name,
+.driving,
+.place-of-birth,
+.dob,
+.nationality{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.show-details{
+  margin-top: 10px;
+}
+
+.hidden{
+  display: none;
+}
+
+.show-address{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.details{
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #2a7de1;
+  cursor: pointer;
+}
+.dob-nationality{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.right{
+  width: 50%;
+  display: flex;
+}
+
+.right .right-left{
+  width: 40%;
+  background-color: #084c41;
+  color:white;
+  padding: 30px;
+}
+.center{
+  text-align: center;
+}
+.fl-name {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.r-job{
+  font-size: 20px;
+  font-weight: bold;
+}
+.right-left h1,
+.right-left h2 {
+  margin-bottom: 20px;
+}
+.details-output{
+  display: none;
+  padding: 20px;
+}
+.date-place{
+  display: none;
+  padding: 20px;
+}
+.nat{
+  display: none;
+  padding: 20px;
+}
+.driv-lic{
+  padding: 20px;
+  display: none;
+}
+.btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.professional{
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #1a91f0;
+}
+.profHidden{
+  display: none;
+}
+.job-emp{
+  display: flex;
+  gap: 20px;
+}
+.jobTitle , .emp{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.jobTitle input , .emp input{
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #eff2f9;
+}
+.date-city{
+  margin-top: 20px;
+  display: flex;
+  gap:20px
+}
+.start-end , .ciSt{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.inline{
+  display: flex;
+  gap: 15px;
+}
+.start-end input , .ciSt input{
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #eff2f9;
+}
+.description{
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.description textarea{
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #eff2f9;
+}
+.jobTitle input:focus ,
+.emp input:focus , 
+.start-end input:focus ,
+.ciSt input:focus , 
+.description textarea:focus{
+  border-bottom: 2px solid #2a7de1;
+}
+.imgOutput{
+  text-align: center;
+  display: none;
+}
+.resume-img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.right .right-right{
+  padding: 30px;
+}
+.job-emp-city{
+  display: none;
+}
+@media (max-width: 768px){
+
+  .container{
+    flex-direction: column;
+  }
+
+  .left,
+  .right{
+    width: 100%;
+  }
+
+  .job-details,
+  .name,
+  .email-phone,
+  .linkedin-code,
+  .city-country,
+  .driving-placeOfBirth,
+  .dob-nationality,
+  .job-emp,
+  .date-city,
+  .description{
+    flex-direction: column;
+  }
+
+  .img-store{
+    justify-content: flex-start;
+  }
+}
