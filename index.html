@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1 style="text-align: center;">Resume Builder</h1>
+            <div class="job-details">
+                <div class="job-info">
+                    <label>Job Target</label>
+                    <input type="text" placeholder="The role you want" class="jobInput">    
+                </div>
+                <div class="img-store">
+                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" width="120" class="img"/>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    <label for="fileInput" class="upload-photo">Upload photo</label>
+                </div>
+            </div>
+            <div class="name">
+                <div class="first-name">
+                    <label>First Name</label>
+                    <input type="text" class="first"/>
+                </div>
+                <div class="last-name">
+                    <label>Last Name</label>
+                    <input type="text" class="last"/>
+                </div>
+            </div>
+            <div class="email-phone">
+                <div class="email-en">
+                    <label>Email</label>
+                    <input type="text" class="email">
+                </div>
+                <div class="phone-en">
+                    <label>Phone</label>
+                    <input type="text" class="phone">
+                </div>
+            </div>
+            <div class="linkedin-code">
+                <div class="linkedin-url">
+                    <label>Linkedin Url</label>
+                    <input type="text" class="linkedin">
+                </div>
+                <div class="postal-code">
+                    <label>Postal Code</label>
+                    <input type="text" class="postal">
+                </div>
+            </div>
+            <div class="city-country">
+                <div class="city-state">
+                    <label>City,State</label>
+                    <input type="text" class="city"/>
+                </div>
+                <div class="country-name">
+                    <label>Country</label>
+                    <input type="text" class="country">
+                </div>
+            </div>
+            <div class="show-details">
+                <div class="hidden">
+                    <div class="show-address">
+                        <label>Address</label>
+                        <input type="text" class="address">
+                    </div>
+                    <div class="driving-placeOfBirth">
+                        <div class="driving">
+                            <label>Driving License</label>
+                            <input type="text" class="driving-license">
+                        </div>
+                        <div class="place-of-birth">
+                            <label>Place Of Birth</label>
+                            <input type="text" class="placeOfBirth">
+                        </div>
+                    </div>
+                    <div class="dob-nationality">
+                        <div class="dob">
+                            <label>Date Of Birth</label>
+                            <input type="text" class="DOB">
+                        </div>
+                        <div class="nationality">
+                            <label>Nationality</label>
+                            <input type="text" class="Nationality">
+                        </div>
+                    </div>
+                </div>
+                <div class="profHidden">
+                    <div  class="job-emp">
+                        <div class="jobTitle">
+                            <label>Job title</label>
+                            <input type="text" class="job"/>
+                        </div>
+                        <div class="emp">
+                            <label>Employer</label>
+                            <input type="text" class="employer">
+                        </div>
+                    </div>
+                    <div class="date-city">
+                        <div class="start-end">
+                            <label>Start & End Date</label>
+                            <div class="inline">
+                                <input type="date" class="start">
+                                <input type="date" class="end">
+                            </div>
+                        </div>
+                        <div class="ciSt">
+                            <label>City,State</label>
+                            <input type="text" class="state">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <label>Description</label>
+                        <textarea class="desc"></textarea>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit" class="details">Add more details</button>
+                    <button type="submit" class="professional">Professional Experience</button>
+                </div> 
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-left">
+                <div class="imgOutput">
+                    <img class="resume-img" src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+                </div>
+                <div class="center">
+                    <h1 class="fl-name"></h1>
+                </div>
+                <h2 class="r-job" style="text-align: center;"></h2>
+                <div class="details-output">
+                    <h3>Details</h3>
+                    <p class="addressOutput"></p>
+                    <p class="emailOutput"></p>
+                    <p class="phoneNo"></p>
+                    <p class="linkeDin"></p>
+                    <p class="postalCode"></p>
+                    <p class="cityState"></p>
+                    <p class="countryOutput"></p>
+                </div>
+                <div class="date-place">
+                    <p style="opacity: 0.5;">Date/Place Of Birth</p>
+                    <p class="dateOutput"></p>
+                    <p class="placeOutput"></p>
+                </div>
+                 <div class="nat">
+                    <p style="opacity: 0.5;">Nationality</p>
+                    <p class="natOutput"></p>
+                 </div>
+                 <div class="driv-lic">
+                    <p style="opacity: 0.5;">Driving-License</p>
+                    <p class="drivingOutput"></p>
+                 </div>
+            </div>
+            <div class="right-right">
+                <div class="job-emp-city">
+                    <h1>Emplyoment History</h1>
+                    <p class="allinfo"></p>
+                    <p class="startDate-endDate" style="opacity: 0.5;"></p>
+                    <p class="descriptionOutput"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
